@@ -6,6 +6,7 @@ node('slaves'){
     stage('Build'){
        sh "${MavenHome}/bin/mvn clean package"
     }
+    /*
     stage('ExecuteSonarQubeReport'){
         sh "${MavenHome}/bin/mvn sonar:sonar"
     }
@@ -23,5 +24,6 @@ node('slaves'){
     Regards,
     chandrasekhar.''', subject: 'Build Success', to: 'al.chandrasekhar996@gmail.com,chandrasekharoyal@gmail.com'
     }
+    */
     
 }
